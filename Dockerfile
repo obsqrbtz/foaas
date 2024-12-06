@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:23-alpine
 
 WORKDIR /usr/src/app
 
@@ -9,7 +9,7 @@ RUN npm install
 # Copy application source
 COPY . .
 
-EXPOSE 5000
+EXPOSE 3030
 
 # Switch to a non-root user
 USER node
